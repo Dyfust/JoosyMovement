@@ -48,6 +48,9 @@ public class FirstPersonController : MonoBehaviour
         // Set internal variables
         playerCamera.fieldOfView = fov;
         jointOriginalPos = joint.localPosition;
+
+        // Locking the mouse to the centre of the game window.
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     float camRotation;
